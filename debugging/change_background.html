@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Changer la couleur de fond</title>
+<title>Change Background Color</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -19,9 +19,9 @@
 </head>
 <body>
 
-<h2>Cliquez sur le bouton pour changer la couleur de fond</h2>
+<h2>Click the button to change the background color</h2>
 
-<button id="colorButton">Changer la couleur</button>
+<button id="colorButton">Change Color</button>
 
 <script>
     document.getElementById("colorButton").addEventListener("click", function() {
@@ -29,9 +29,7 @@
     });
 
     function changeBackgroundColor() {
-        // Générer une couleur aléatoire
         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-        // Changer la couleur de fond du body
         document.body.style.backgroundColor = randomColor;
     }
 </script>
